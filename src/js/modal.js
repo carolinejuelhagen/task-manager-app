@@ -7,6 +7,7 @@ const openModal = (formModal, openModalButton) => {
 
 const closeModal =(formModal, closedModalButton)=> {
     closedModalButton.addEventListener("click", (e) => {
+        e.preventDefault();
         formModal.classList.remove("form-modal--display");
     })
 }
